@@ -10,12 +10,19 @@ html(lang="en")
         header 
             h1 Clone-Zoom 
         main   
+            form#nick
+                input(type='text', placeholder='Choose your nickname', required)
+                button Save
             ul 
-            form
+            form#message
                 input(type="text", placeholder="Write a msg", required)
                 button Send
 
         script(src="/public/js/app.js") 
+
+
+
+
 
 
 
