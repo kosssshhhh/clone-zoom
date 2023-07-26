@@ -26,7 +26,7 @@ wss.on('connection', (socket) => {
   socket.on('close', () => console.log('Disconnected from Browser'));
   socket.on('message', (msg) => {
     const message = JSON.parse(msg);
-
+    //check
     switch (message.type) {
       case 'new_message':
         sockets.forEach((aSocket) =>
